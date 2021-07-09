@@ -16,10 +16,11 @@ on:
 jobs:
   test:
 
-    runs-on: ubuntu-latest
+    runs-on: ${{matrix.os}}
     strategy:
       matrix:
-        ruby-version: ['2.6', '2.7', '3.0']
+        ruby-version: ['2.7']
+        os: [macos-latest, ubuntu-latest, ubuntu-latest]
 
     steps:
     - uses: actions/checkout@v2
