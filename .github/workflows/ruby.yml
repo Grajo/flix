@@ -19,7 +19,7 @@ jobs:
     runs-on: ${{matrix.os}}
     strategy:
       matrix:
-        ruby-version: ['2.7']
+        ruby-version: ['2.7.2']
         os: [windows-latest]
 
     steps:
