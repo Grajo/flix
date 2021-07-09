@@ -19,8 +19,8 @@ jobs:
     runs-on: ${{matrix.os}}
     strategy:
       matrix:
-        ruby-version: ['2.7.2']
-        os: [windows-latest]
+        ruby-version: ['2.7','2.8']
+        os: [windows-latest, macos-latest, ubuntu-latest]
 
     steps:
     - uses: actions/checkout@v2
