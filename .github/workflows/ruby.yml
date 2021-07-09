@@ -20,7 +20,7 @@ jobs:
     strategy:
       matrix:
         ruby-version: ['2.7']
-        os: [macos-latest, ubuntu-latest, ubuntu-latest]
+        os: [windows-latest]
 
     steps:
     - uses: actions/checkout@v2
